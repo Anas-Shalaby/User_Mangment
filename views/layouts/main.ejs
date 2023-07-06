@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= locals.title %></title>
+    <meta name="content" content="<%= locals.description %>">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+
+    <%- include('../partials/header.ejs') %>
+
+    <div class="container-fluid">
+        <div class="row">
+         <%- include('../partials/sidebar.ejs') %>
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <%- body  %>
+        </main>
+        </div>
+    </div>
+
+
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
