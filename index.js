@@ -9,7 +9,7 @@ const methodOverride = require('method-override');
 
 const app = express();
 
-const port = 2000 || process.env.PORT;
+const port = process.env.PORT || 2000;
 // Connect DB
 connectDB();
 
